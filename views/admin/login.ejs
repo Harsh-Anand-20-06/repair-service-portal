@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User Login | AquaFix</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-blue-100 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white rounded-xl shadow-xl p-8 max-w-md w-full">
+    <div class="mb-6 text-center">
+      <h1 class="text-2xl font-bold text-blue-600">Welcome Back</h1>
+      <p class="text-gray-600 text-sm mt-1">Login to track your complaint</p>
+    </div>
+
+    <form action="/admin/login" method="POST" class="space-y-4">
+      <div>
+        <label for="username" class="block text-sm font-medium text-gray-700">username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          required
+          placeholder="Admin's Username"
+          class="mt-1 w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 px-3 py-2"
+        />
+      </div>
+
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          class="mt-1 w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 px-3 py-2"
+        />
+      </div>
+
+      <div class="flex items-center justify-between">
+        <label class="flex items-center text-sm">
+          <input type="checkbox" class="mr-2 rounded" />
+          Remember me
+        </label>
+        <a href="/user/forgot-password" class="text-sm text-blue-500 hover:underline">Forgot password?</a>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition"
+      >
+        Login
+      </button>
+    </form>
+
+    <p class="text-center text-sm text-gray-600 mt-6">
+      New user? <a href="/user/signIn" class="text-blue-600 hover:underline font-medium">Register here</a>
+    </p>
+  </div>
+
+</body>
+</html>
