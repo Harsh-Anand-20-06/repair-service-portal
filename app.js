@@ -1,5 +1,5 @@
 
-const DB_PATH = "mongodb+srv://root:Har%402005@cluster0.srihrui.mongodb.net/aqua?retryWrites=true&w=majority&appName=Cluster0"; //vvi-->.net k baad sidha database ka naam likh do(yha airbnb hai), sidha connect ho jayega
+
 
 
 //external module
